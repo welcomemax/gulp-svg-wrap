@@ -27,7 +27,12 @@ module.exports = function(options) {
         }
 
         if (file.isBuffer()) {
-            file.contents = new Buffer(strPrefix + file.contents.toString('utf-8') + strSuffix);
+            var sContent = file.contents.toString('utf-8');
+
+            sContent.replace(/<defs>(.*)<\/defs>/, '').replace(/<use(.*)\/>/, '');
+            sContent = strPrefix + sContent + strSuffix;
+
+            file.contents = new Buffer(sContent);
         }
 
         if (file.isStream()) {
