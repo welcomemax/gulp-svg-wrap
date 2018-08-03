@@ -1,0 +1,28 @@
+{
+  "name": "gulp-svg-wrap",
+  "version": "1.0.0",
+  "description": "Make SVG React readble",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/welcomemax/gulp-svg-wrap.git"
+  },
+  "keywords": [
+    "svg",
+    "react",
+    "component",
+    "icons"
+  ],
+  "author": "welcomemax",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/welcomemax/gulp-svg-wrap/issues"
+  },
+  "homepage": "https://github.com/welcomemax/gulp-svg-wrap#readme",
+  "dependencies": {
+    "through2": "^2.0.3"
+  }
+}
